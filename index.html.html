@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b99e6756e.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>zomato</title>
+    <script>
+        $(document).ready(function(){
+         $(".default_option").click(function(){
+           $(".dropdown ul").toggleClass("active");
+         });
+         $(".dropdown ul li").click(function(){
+             var text = $(this).text();
+             $(".default_option").text(text);
+             $(".dropdown ul").removeClass("active");
+         })  
+         });   
+
+    
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div class="leftmenu">
+            <h5><b><i class="fas fa-mobile-alt" style="font-size:15px; color:white;"></i> Get the App </b></h5>
+        </div>
+        <div class="rightmenu">
+            <ul>
+                <li> Sign Up </li>
+                <li> Login </li>
+            </ul>
+        </div>
+    </div>
+    <section id="banner">
+       <div class="banner-text">
+      <h1><em>zomato</em></h1>
+                <p>Discover the best foods & drinks in Delhi/NCR</p>
+                <br>
+                <div class="wrapper">
+                    <div class="search_box">
+                        <div class="dropdown">
+                            <div class="default_option"><i class="fas fa-map-marker-alt" style="color:rgb(241, 117, 117); font-size:18px; "></i> Delhi NCR</div>
+                            <ul>
+                                <li style="color:rgb(241, 46, 46);"><i class="far fa-compass" style="color:rgb(243, 116, 116); font-size: 15px;"></i>  Detect current location<br>  <small style="color:rgba(37, 35, 35, 0.144);">using GPS</small></li>
+                            </ul>
+                        </div>
+
+                        <i class="fas fa-search" style="padding-left: 15px; padding-top: 6px; color: rgba(150, 146, 146, 0.589); font-size: 18px;"></i>
+                        <div class="search_field"> 
+                            <input type="text" class="input" placeholder="search for restraunt, cuisine or a dish">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="middle-section">
+            <div class="container-fluid">
+                <div class="box"><img src="fd4.jpg">
+                    <div class="caption-text"><h3>Order Food Online</h3>
+                    </div>
+                </div>
+                <div class="box"><img src="fd3.jpg">
+                    <div class="caption-text"><h3>Go out for meal</h3>
+                    </div>
+                </div>
+                <div class="box"><img src="fd2.jpg">
+                    <div class="caption-text"><h3>Nightlife & Clubs</h3>
+                    </div>
+                </div>
+                <div class="box"><img src="fd1.jpg">
+                    <div class="caption-text"><h3>Zomato Pro</h3>
+                    </div>
+                </div>
+               </div>
+            </div>
+    </section>
+   <br><br><br><br>
+    <section id="middle">
+        <h1 style="font-size: 40px;
+        font-family: sans-serif;
+        font-weight: 200;
+        margin-left: 110px;">Collections</h1>
+        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends
+        </p>
+        <p id="p1">All Collections in Delhi NCR<span><i class='fas fa-caret-right' style='font-size:22px' color:#f76363; margin-left:5px;></i></span></p>
+        <div class="container-fluid1">
+            <div class="box1">
+                <h3>Valentine's Special</h3>
+               <p id="p2">19 Places <i class='fas fa-caret-right' style='font-size: 22px;'></i></p>
+                </div>
+            
+            <div class="box2">
+                <h3>Raising the Bar</h3>
+                <p id="p2">167 Places <i class='fas fa-caret-right' style='font-size: 22px;'></i></p>
+                </div>
+            
+            <div class="box3">
+                <h3>Best of Delhi/NCR</h3>
+                <p id="p2">27 Places <i class='fas fa-caret-right' style='font-size: 22px;'></i></p>
+                </div>
+        
+            <div class="box4">
+                <h3>Trending This Week</h3>
+                 <p id="p2">30 Places <i class='fas fa-caret-right' style='font-size: 22px;'></i></p>
+                </div>
+            
+           </div>
+        </div>
+    </section>
+<br><br><br><br>
+<section id="section1">
+        <h1 class="h1" style="font-size: 35px;
+        font-family: sans-serif;
+        font-weight: 90; text-align:center; color:#474545;">Popular localities in and around <b>Delhi NCR</b></h1>
+   <br><br><br>
+     
+    <table id="table1" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%" >Counnaught Place (379 pla...  <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Sector 29, Gurgaon (211 pl... <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Sector 18, Noida (251 plac... <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+        </tr>
+    </table>
+    <br><br>
+    <table id="table2" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%">Rajouri Garden (544 places) <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Saket (563 places) <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">DLF Cyber City (188 places) <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+        </tr>
+
+    </table>
+    <br><br>
+    <table id="table3" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%">Golf Course Road (293 pla...  <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">DLF Phase 4 (633 places) <i class='fas fa-angle-right'style="font-size:17px;" ></i></th>
+            <th width="33.3%">Delhi University-GTB Naga... <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+        </tr>
+
+    </table>
+    <br><br>
+    <table id="table4" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%">Indirapuram (1216 places)  <i class='fas fa-angle-right'style="font-size:17px;" ></i></th>
+            <th width="33.3%">Vasant Kunj (750 places) <i class='fas fa-angle-right'style="font-size:17px;" ></i></th>
+            <th width="33.3%">Greater Kailash 1 (GK1) (34...)  <i class='fas fa-angle-right' style="font-size:17px;" ></i></th>
+        </tr>
+
+    </table>
+    <br><br>
+    <table id="table5" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%">Chanakyapuri (131 places)  <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Rohini (2114 places)       <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Janpath (55 places)        <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+        </tr>
+
+    </table>
+    <br><br>
+    <table id="table6" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%">Hauz Khas Village (61 plac...  <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Sector 38, Noida (99 plac...   <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Janakpuri (685 places)         <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+        </tr>
+
+    </table>
+    <br>
+    <table id="table7" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%">Sector 50, Gurgaon (370...  <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">MG Road, Gurgaon (329 pl...   <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">DLF Phase 3 (808 places)   <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+        </tr>
+
+    </table>
+    <br><br>
+    <table id="table8" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%">Punjabi Bagh (260 places)  <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Netaji Subhash Place (133... <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Malviya Nagar (768 places)   <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+        </tr>
+
+    </table>
+    <br><br>
+    <table id="table9" width="90%" border="0">
+        <tr colspan="3">
+            <th width="33.3%">Sohna Road (588 places)  <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Greater Kailash (GK2) (1...   <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+            <th width="33.3%">Pitampura (587 places)   <i class='fas fa-angle-right' style="font-size:17px;"></i></th>
+        </tr>
+
+    </table>
+
+
+
+
+    </section>
+    <br><br><br>
+
+<section id="section2">
+    <h4 class="h4" style="font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-left: 110px; color:rgb(49, 48, 48);" >Explore other options for you here</h4>
+   <br><br>
+    <p  style="font-size: 22px; font-weight:400; color:#2e2d2d">Popular cuisines near me</p>
+    <br>
+   
+<p id="p4">Bakery food near me <b>.</b>  Beverages food near me   <b>.</b>   Biryani food near me  <b>.</b>   Burger food near me <b>.</b>  Cafe food near me  <b>.</b>   Chinese food near me
+ Continental food near me  <b>.</b>   Desserts food near me  <b>.</b>   Healthy food near me  <b>.</b>   Ice Cream food near me  <b>.</b>   Italian food near me  <b>.</b>   Mithai food <br>near me <b>.</b>  Momos food near me <b>.</b>  Mughlai food near me <b>.</b>  North Indian food near me <b>.</b>  Pizza food near me <b>.</b>  Rolls food near me <b>.</b>  Sandwich<br> food near me <b>.</b> South Indian food near me <b>.</b> Street food near me</p>
+    
+</section>
+<br><br><br><br>
+<section id="section3">
+    <h4 class="h4" style="font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-left: 110px; color:rgb(49, 48, 48);">Top Restaurant Chains</h4>
+<table width="70%" border="0">
+    <tr>
+        <td><a href="#">Bikanerwala</a></td>
+        <td><a href="#">Biryani Blues</a></td>
+        <td><a href="#">BTW</a></td>
+        <td><a href="#">Burger King</a></td>
+        <td><a href="#">Burger Singh</a></td>
+    </tr>
+    <tr>
+        <td><a href="#">Domino's</a></td>
+        <td><a href="#">Dunkin 'Donuts</a></td>
+        <td><a href="#">Faasos</a></td>
+        <td><a href="#">Haldiram's</a></td>
+        <td><a href="#">KFC</a></td>
+    </tr>
+    <tr>
+        <td><a href="#">Krispy Kreme</a></td>
+        <td><a href="#">MC'Donalds</a></td>
+        <td><a href="#">Moti Mehel Delux</a></td>
+        <td><a href="#">Om Sweets & Snacks</a> </td>
+        <td><a href="#">Paradise Biryani</a></td>
+    </tr>
+    <tr>
+        <td><a href="#">Pizza Hut</a></td>
+        <td><a href="#">Sagar Ratna</a></td>
+        <td><a href="#">Subway</a></td>
+        <td><a href="#">WOW!Momo</a> </td>
+    </tr>
+</table>
+
+</section>
+
+<br><br><br><br>
+<section id="footer">
+    <img src="zomato.png" style="width:200px; height:120px; padding-left:98px;" margin-bottom:20px;>
+    <button id="btn1" class="btn btn-outline-secondary"><i class="fas fa-globe" style="color:#474545;"></i> English <i class='fas fa-angle-down'></i> </button>
+    <button id="btn2" class="btn btn-outline-secondary">India  <i class='fas fa-angle-down'></i></button>
+     <table id="table10" width= "90%" border="0">
+        <tr>
+            <td id ="td1">COMPANY</td>
+            <td id="td1">FOR FOODIES</td>
+            <td id="td1">FOR RESTRAUNTS</td>
+            <td id="td1">FOR YOU</td>
+            <td id="td1">SOCIAL LINKS</td>
+
+        </tr>
+        <tr>
+            <td id="td2"><a href="#">Who We are</a></td>
+            <td id="td2"><a href="#">Code of Conduct</a></td>
+            <td id="td2"><a href="#">Add Restraunts</a></td>
+            <td id="td2"><a href="#">Privacy</a></td>
+            <td id="td2"> <i class="fab fa-facebook" style="font-size: 20px; color:black;"></i> <i class="fab fa-twitter" style=" font-size:20px; color:black;"></i> <i class="fab fa-instagram" style="font-size:20px; color:black;"></i> </td>
+
+        </tr>
+        <tr>
+            <td id="td2"><a href="#">Blog</a></td>
+            <td id="td2"><a href="#">Community</a></td>
+            <td id="td2"><a href="#">Claim your Listing</a></td>
+            <td id="td2"><a href="#">Terms</a></td>
+        </tr>
+        <tr>
+            <td id="td2"><a href="#">Carriers</a></td>
+            <td id="td2"><a href="#">Bloggers Help</a></td>
+            <td id="td2"><a href="#">Business App</a></td>
+            <td id="td2"><a href="#">Security</a></td>
+           <!--<td><button type="button" class="btn btn-lg" style="background-color: rgb(29, 44, 80);"><i class="fab fa-apple" style="font-size: 22px; margin-right:5px; margin-top:-6px;"></i><small>Download on the</small><br>App Store</button></td>-->
+        </tr>
+    </tr>
+    <tr>
+        <td id="td2"><a href="#">Report Fraud</a></td>
+        <td id="td2"><a href="#">Mobile Apps</a></td>
+        <td id="td2"><a href="#">Restraunt Widgets</a></td>
+        <td id="td2"><a href="#">Site map</a></td>
+    </tr>
+    <tr>
+        <td id="td2"><a href="#">Contact</a></td>
+        <td id="td2"></td>
+        <td id="td2"><a href="#">Products for Businesses</a></td>
+        <td id="td2"></td>
+        <!--<td><button type="button" class="btn btn-lg" style="background-color: rgb(28, 44, 83); padding: 10px 43px;"><i class="fab fa-google-play" style="font-size: 22px; align-items: center; margin-right: 8pxpx;"></i><small>GET IT ON</small><br>Google Play</button></td>-->
+    </tr>
+    </table>
+</section>
+</body>
+</html>
